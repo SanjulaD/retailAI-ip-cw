@@ -1,0 +1,11 @@
+,lhs,,rhs,support,confidence,coverage,lift,count
+[1],"{mineral water,whole wheat pasta}",=>,{olive oil},0.003866151,0.402777778,0.00959872,6.115862573,29
+[2],"{spaghetti,tomato sauce}",=>,{ground beef},0.003066258,0.489361702,0.006265831,4.980599902,23
+[3],"{french fries,herb & pepper}",=>,{ground beef},0.003199573,0.461538462,0.006932409,4.697421981,24
+[4],"{cereals,spaghetti}",=>,{ground beef},0.003066258,0.46,0.006665778,4.681763908,23
+[5],"{frozen vegetables,mineral water,soup}",=>,{milk},0.003066258,0.605263158,0.005065991,4.670863115,23
+[6],"{chocolate,herb & pepper}",=>,{ground beef},0.003999467,0.441176471,0.009065458,4.490182776,30
+[7],"{chocolate,mineral water,shrimp}",=>,{frozen vegetables},0.003199573,0.421052632,0.007598987,4.41722488,24
+[8],"{frozen vegetables,mineral water,olive oil}",=>,{milk},0.003332889,0.510204082,0.006532462,3.93728479,25
+[9],"{cereals,ground beef}",=>,{spaghetti},0.003066258,0.676470588,0.004532729,3.885303126,23
+[10],"{frozen vegetables,soup}",=>,{milk},0.003999467,0.5,0.007998933,3.858539095,30
