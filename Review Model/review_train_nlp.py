@@ -51,7 +51,7 @@ y_pred = classifier.predict(X_test)
 
 # save the model to disk
 import pickle
-filename = './model/review_model.pkl'
+filename = './src/model/review_model.pkl'
 pickle.dump(classifier, open(filename, 'wb'))
 
 #bar graph
@@ -65,7 +65,7 @@ plt.bar(X_axis + 0.25, test_pred_good, color = 'blue', width = 0.25)
 plt.bar(X_axis + 0.5, test_pred_bad, color = 'red', width = 0.25)
 plt.legend(['Good', 'Bad'])
 plt.xticks([i + 0.37 for i in range(2)], ['Train', 'Predict'])
-plt.savefig('./model/review_train_bar.png', dpi=(300))
+plt.savefig('./src/model/review_train_bar.png', dpi=(300))
 plt.show()
 
 print('Good (Test) : ', pd.Series(y_test).value_counts()[1])
