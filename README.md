@@ -1,1 +1,1 @@
-# retailAI-ip-cw
+# RetailGenZ
