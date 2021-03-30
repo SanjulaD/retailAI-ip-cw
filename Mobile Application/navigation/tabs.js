@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { createBottomTabNavigator, BottomTabBar } from "@react-navigation/bottom-tabs"
 
-import { Home } from "../screens"
+import { Home,Analysis } from "../screens"
 import { COLORS, FONTS, icons } from "../constants"
 import {LinearGradient} from "expo-linear-gradient"
 
@@ -47,7 +47,7 @@ const TabBarCustomButton = ({children, onPress}) =>{
      </TouchableOpacity>
     )
 }
-const Tabs = () => {
+const Tabs = ({ navigation}) => {
     return (
         <Tab.Navigator
             tabBarOptions={{
@@ -65,7 +65,7 @@ const Tabs = () => {
             }}
         >
             <Tab.Screen
-                name="Home"
+                name="Home" 
                 component={Home}
                 options={{
                     tabBarIcon: ({focused}) =>(
@@ -80,6 +80,9 @@ const Tabs = () => {
                                     tintColor:focused? COLORS.
                                     primary:COLORS.black
                                 }}
+                                tabPress={() => console.log("click")}
+
+
                            />
                            <Text style={{color:focused? COLORS.
                            primary:COLORS.black,...FONTS.body5
@@ -88,6 +91,13 @@ const Tabs = () => {
                            </View>
                     )
                 }}
+                onPress={() => console.log("Notificationn click")}
+                listeners={{
+                    tabPress: e => {
+                      // Prevent default action
+                      navigation.navigate("Analysis");
+                    },
+                  }}
             />
             <Tab.Screen
                 name="Portfolio"
@@ -113,6 +123,7 @@ const Tabs = () => {
                            </View>
                     )
                 }}
+                
             />
             <Tab.Screen
                 name="Transaction"
