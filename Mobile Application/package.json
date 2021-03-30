@@ -16,7 +16,9 @@
     "expo": "~40.0.0",
     "expo-linear-gradient": "~8.4.0",
     "expo-status-bar": "~1.0.3",
+    "firebase": "^8.3.1",
     "lodash": "^4.17.21",
+    "native-base": "^2.15.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
@@ -24,7 +26,8 @@
     "react-native-linear-gradient": "^2.5.6",
     "react-native-screens": "^2.18.1",
     "react-native-splash-screen": "^3.2.0",
-    "react-native-web": "~0.13.12"
+    "react-native-web": "~0.13.12",
+    "readable-stream": "^3.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"

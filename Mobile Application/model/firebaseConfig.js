@@ -1,22 +1,29 @@
-import * as firebase from 'firebase';
+import React from 'react';
+import { View, Text } from 'react-native';
+import {firebase }from 'firebase';
+class FConfig extends React.Component {
 
-// Optionally import the services that you want to use
-//import "firebase/auth";
-//import "firebase/database";
-//import "firebase/firestore";
-//import "firebase/functions";
-//import "firebase/storage";
+  connect() {
+  
+ 
 
-// Initialize Firebase
-const firebaseConfig = {
-  apiKey: 'api-key',
-  authDomain: 'project-id.firebaseapp.com',
-  databaseURL: 'https://project-id.firebaseio.com',
-  projectId: 'project-id',
-  storageBucket: 'project-id.appspot.com',
-  messagingSenderId: 'sender-id',
-  appId: 'app-id',
-  measurementId: 'G-measurement-id',
+var config = {
+  apiKey: "AIzaSyDPM-aQRZxWvH0p8tbs3ZRB2cgX406CDmc",
+  authDomain: "livedb-5530b.firebaseapp.com",
+  databaseURL: "https://livedb-5530b-default-rtdb.firebaseio.com",
+  projectId: "livedb-5530b",
+  storageBucket: "livedb-5530b.appspot.com",
+  messagingSenderId: "861051012995",
+  appId: "1:861051012995:web:ca5863626ff750cea3d8b6",
+  measurementId: "G-R1E1TZ0ZNE"
 };
+}
 
-firebase.initializeApp(firebaseConfig);
+
+}
+
+export default FConfig;
+
+
+
+

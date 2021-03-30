@@ -10,7 +10,7 @@ import {
     FlatList
 } from 'react-native';
 import { dummyData, COLORS, SIZES, FONTS, icons, images, trending } from '../constants'
-
+import GetData from '../model/getData';
 const Home = ({ navigation }) => {
     const [trending, setTrending] = React.useState(dummyData.trendingCurrencies)
 
@@ -98,7 +98,7 @@ const renderItem= ({item,index})=>(
                     }}
                 >
                     <Text style={{ color: COLORS.white, ...FONTS.h3 }}>IN </Text>
-                    <Text style={{ marginTop: SIZES.base, color: COLORS.white, ...FONTS.h1 }}>{/*${dummyData.portfolio.balance}*/} 45</Text>
+                    <Text style={{ marginTop: SIZES.base, color: COLORS.white, ...FONTS.h1 }}>{/*${dummyData.portfolio.balance}*/}<GetData></GetData> </Text>
                     <Text style={{ color: COLORS.white, ...FONTS.body5 }}>{/*${dummyData.portfolio.changes}*/}2.56% last hour</Text>
 
 
