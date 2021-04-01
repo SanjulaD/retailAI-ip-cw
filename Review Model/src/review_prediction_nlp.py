@@ -165,6 +165,7 @@ def plot_Reviews():
     
     print("Predicting!")
     prediction = model.predict(X)
+    
     # Bar graph
     plt.title("Review Prediction")
     plt.xlabel('Review Category')
@@ -177,4 +178,5 @@ def plot_Reviews():
     return render_template('plot.html', url='./../static/images/review_bar.png')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
+    

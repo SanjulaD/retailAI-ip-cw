@@ -17,6 +17,7 @@ dataset = pd.read_csv('Retail_Reviews.tsv', delimiter = '\t', quoting = 3)
 import re
 import nltk
 nltk.download('stopwords')
+nltk.download('punkt')
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 corpus = []
@@ -30,6 +31,33 @@ for i in range(0, 1000):
     
     review = ' '.join(review)
     corpus.append(review)
+    
+# Create a dictionary
+wordfreq = {}
+for review in corpus:
+    tokens = nltk.word_tokenize(review)
+    for token in tokens:
+        if token not in wordfreq.keys():
+            wordfreq[token] = 1
+        else:
+            wordfreq[token] += 1
+            
+# Heap the Dictionary
+import heapq
+most_freq = heapq.nlargest(1000, wordfreq, key=wordfreq.get)
+
+sentence_vectors = []
+for review in corpus:
+    sentence_tokens = nltk.word_tokenize(review)
+    sent_vec = []
+    for token in most_freq:
+        if token in sentence_tokens:
+            sent_vec.append(1)
+        else:
+            sent_vec.append(0)
+    sentence_vectors.append(sent_vec)
+sentence_vectors = np.asarray(sentence_vectors)
+    
  
 # Creating the bag of words model
 from sklearn.feature_extraction.text import CountVectorizer
