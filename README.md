@@ -1,2 +1,7 @@
 # RetailGenZ
 ## Retail Analytics using Artificial Intelligence
+Retailing is an integral a part of modern society. Consumers highly depend upon retail stores (both online and offline) for his or her various goods and repair requirements. Earlier, goods and services were made available through the method of trading. But in present times trading is replaced by buying and selling goods which makes retail stores a crucial a part of the availability chain and thus remains a beautiful business for several. With a presence worth several trillion dollars, retail remains a big contributor to the worldwide economy. With the recent technological advancements, analytics in retail has gained much popularity for its aid in helping the business to form key decisions. It enables the retailer to return up with standard methodologies that dissect the customer segment and merchandise categories and may help in boosting its revenue. This project puts various concepts of retail analytics to use providing analytical insights which will be essential for creating marketing, and procurement decisions. We aim to leverage several machine learning techniques to research the retail business for one retailer. A number of the expected outcomes for this project are listed below.
+- Analyze customer purchasing pattern
+- Identify different segments for products and customers 
+- Prepare sales and volume forecasting models
+- Conduct product affinity analysis and potentially develop a product recommender system.
