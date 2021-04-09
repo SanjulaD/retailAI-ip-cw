@@ -82,7 +82,7 @@ import pickle
 filename = './src/model/review_model.pkl'
 pickle.dump(classifier, open(filename, 'wb'))
 
-#bar graph
+# bar graph
 plt.title("Review Train and Prediction")
 plt.xlabel('Review Category')
 plt.ylabel("Count")
