@@ -1,9 +1,7 @@
-
-
-
-
-
-
-
+numpy
+matplotlib
+pandas
+nltk
 flask
+sklearn
 flasgger
