@@ -6,7 +6,6 @@ import {
 } from '@coreui/react'
 
 import ChartLineSimple from '../views/charts/ChartLineSimple'
-import ChartBarSimple from '../views/charts/ChartBarSimple'
 
 const WidgetsDropdown = () => {
   // render
