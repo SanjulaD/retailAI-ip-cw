@@ -6,7 +6,12 @@ import {
     CCardBody,
     CCol,
     CRow,
+    CCardHeader,
 } from '@coreui/react'
+
+import {
+    CChartDoughnut,
+} from '@coreui/react-chartjs'
 
 import MainChartExample from '../../charts/MainChartExample.js'
 
@@ -41,7 +46,28 @@ const Dashboard = () => {
                                     </CButtonGroup>
                                 </CCol>
                             </CRow>
-                            <MainChartExample style={{ height: '300px', marginTop: '40px' }} />
+                            <MainChartExample style={{ height: '200px', marginTop: '40px' }} />
+                        </CCardBody>
+                    </CCard>
+                </CCol>
+                <CCol md="4">
+                    <CCard>
+                        <CCardHeader>
+                            Audience
+                        </CCardHeader>
+                        <CCardBody>
+                            <CChartDoughnut
+                                datasets={[
+                                    {
+                                        backgroundColor: [
+                                            '#fdde69',
+                                            '#403ec5',
+                                        ],
+                                        data: [40, 80]
+                                    }
+                                ]}
+                                labels={['Total Visitors', 'Avearege Time Spent']}
+                            />
                         </CCardBody>
                     </CCard>
                 </CCol>
