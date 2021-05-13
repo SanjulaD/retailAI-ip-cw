@@ -14,6 +14,7 @@ import {
 } from '@coreui/react-chartjs'
 
 import MainChartExample from '../../charts/MainChartExample.js'
+import ReviweComponent from 'src/components/Review/ReviweComponent.js'
 
 const WidgetsDropdown = lazy(() => import('./../../../widgets/WidgetsDropdown'))
 
@@ -53,22 +54,9 @@ const Dashboard = () => {
                 <CCol md="4">
                     <CCard>
                         <CCardHeader>
-                            Audience
+                            Review Prediction
                         </CCardHeader>
-                        <CCardBody>
-                            <CChartDoughnut
-                                datasets={[
-                                    {
-                                        backgroundColor: [
-                                            '#fdde69',
-                                            '#403ec5',
-                                        ],
-                                        data: [40, 80]
-                                    }
-                                ]}
-                                labels={['Total Visitors', 'Avearege Time Spent']}
-                            />
-                        </CCardBody>
+                        <ReviweComponent />
                     </CCard>
                 </CCol>
             </CRow>
