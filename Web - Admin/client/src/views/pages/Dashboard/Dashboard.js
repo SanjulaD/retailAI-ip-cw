@@ -9,10 +9,6 @@ import {
     CCardHeader,
 } from '@coreui/react'
 
-import {
-    CChartDoughnut,
-} from '@coreui/react-chartjs'
-
 import MainChartExample from '../../charts/MainChartExample.js'
 import ReviweComponent from 'src/components/Review/ReviweComponent.js'
 

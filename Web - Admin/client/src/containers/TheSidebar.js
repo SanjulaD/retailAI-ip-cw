@@ -7,12 +7,9 @@ import {
   CSidebarNav,
   CSidebarNavDivider,
   CSidebarNavTitle,
-  CSidebarMinimizer,
   CSidebarNavDropdown,
   CSidebarNavItem,
 } from '@coreui/react'
-
-import CIcon from '@coreui/icons-react'
 
 // sidebar nav config
 import navigation from './_nav'
