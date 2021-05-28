@@ -11,9 +11,11 @@ const ReviweComponent = () => {
     const [count, setCount] = useState('')
     const [loading, setLoading] = useState(false)
     const [review, setReview] = useState('Good');
+    const [disable, setDisable] = useState(true)
 
     const onChangeHandler = event => {
         setSelectedFile(event.target.files[0])
+        setDisable(false)
     }
 
     const onClickHandler = () => {
@@ -47,7 +49,7 @@ const ReviweComponent = () => {
                 )
             }
             <div className="p-2">
-                <button type="button" className="btn btn-success btn-block mb-3" onClick={onClickHandler}>Submit</button>
+                <button type="button" disabled={disable} className="btn btn-success btn-block mb-3" onClick={onClickHandler}>Submit</button>
             </div>
         </Form>
     )

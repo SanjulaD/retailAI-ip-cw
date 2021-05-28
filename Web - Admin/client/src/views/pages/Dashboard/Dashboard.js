@@ -15,6 +15,7 @@ import ReviweComponent from 'src/components/Review/ReviweComponent.js'
 const WidgetsDropdown = lazy(() => import('./../../../widgets/WidgetsDropdown'))
 
 const Dashboard = () => {
+
     return (
         <>
             <CRow>
