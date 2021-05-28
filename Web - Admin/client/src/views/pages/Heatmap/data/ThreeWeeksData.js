@@ -7,8 +7,6 @@ const startDate = new Date(2021, 3, 2);
 const endDate = new Date(2021, 4, 23);
 const data = setData(startDate, endDate, 30);
 
-console.log(data)
-
 const colors = [];
 colors.push({ count: 1, color: "#a4fba6" });
 colors.push({ count: 3, color: "#4ae54a" });

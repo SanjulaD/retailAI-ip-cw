@@ -18,16 +18,16 @@ const _nav =  [
   },
   {
     _tag: 'CSidebarNavItem',
-    name: 'Heatmap',
+    name: 'Overall Count',
     to: '/heatmap',
     icon: 'cil-puzzle',
   },
-  // {
-  //   _tag: 'CSidebarNavItem',
-  //   name: 'Settings',
-  //   to: '/settings',
-  //   icon: 'cil-settings',
-  // },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Stall Heatmap',
+    to: '/StallHeatmap',
+    icon: 'cil-settings',
+  },
   {
     _tag: 'CSidebarNavItem',
     name: 'Logout',

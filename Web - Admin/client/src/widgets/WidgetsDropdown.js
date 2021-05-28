@@ -30,7 +30,6 @@ const WidgetsDropdown = () => {
     starCountRef.on('value', (snapshot) => {
       var data = snapshot.val();
       setCount(data)
-      console.log(data)
       setLoading(false)
     })
   }
