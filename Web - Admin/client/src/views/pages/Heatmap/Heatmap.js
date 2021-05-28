@@ -7,7 +7,7 @@ const Heatmap = () => {
     return (
         <div>
             <Col s={12}>
-                <ThreeWeeksData />
+                <OneYearData />
             </Col>
         </div>
     )

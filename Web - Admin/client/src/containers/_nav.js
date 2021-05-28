@@ -22,12 +22,12 @@ const _nav =  [
     to: '/heatmap',
     icon: 'cil-puzzle',
   },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Settings',
-    to: '/settings',
-    icon: 'cil-settings',
-  },
+  // {
+  //   _tag: 'CSidebarNavItem',
+  //   name: 'Settings',
+  //   to: '/settings',
+  //   icon: 'cil-settings',
+  // },
   {
     _tag: 'CSidebarNavItem',
     name: 'Logout',
