@@ -5,7 +5,6 @@ import {
   Card
 } from 'react-bootstrap'
 import Loader from './../../../../components/Loader/Loader'
-import connectDB from './../../../../config/firebaseConfig'
 const OneYearData = () => {
 
   const [loading, setLoading] = useState(false)
@@ -17,7 +16,7 @@ const OneYearData = () => {
   //   .fill(0)
   //   .map((_, i) => (i % 2 === 0 ? true : false));
 
-  const yLabels = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const yLabels = ["Sat", "Sun", "Mon"];
   const data = new Array(yLabels.length)
     .fill(0)
     .map(() =>

@@ -38,6 +38,7 @@ const StallHeatmap = () => {
             //Stall in data
             const itemsIn = entries.map((data) => {
                 setStallIn(stallIn => [...stallIn, data.in])
+                
             })
 
             //Stall Out data

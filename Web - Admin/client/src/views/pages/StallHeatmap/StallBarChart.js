@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react'
 import {
     CCard,
     CCardBody,
-    CCardHeader,
-    CCardGroup
 } from '@coreui/react'
 import {
     CChartBar,

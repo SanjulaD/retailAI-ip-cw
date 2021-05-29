@@ -35,7 +35,7 @@ const Dashboard = () => {
                                                     color="outline-secondary"
                                                     key={value}
                                                     className="mx-0"
-                                                    active={value === 'Month'}
+                                                    active={value === 'Day'}
                                                 >
                                                     {value}
                                                 </CButton>
@@ -57,6 +57,7 @@ const Dashboard = () => {
                     </CCard>
                 </CCol>
             </CRow>
+            <h4 className="mb-3">Live Analytics</h4>
             <WidgetsDropdown />
         </>
     )
