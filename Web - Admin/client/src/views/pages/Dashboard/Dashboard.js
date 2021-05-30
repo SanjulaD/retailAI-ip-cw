@@ -18,6 +18,8 @@ const Dashboard = () => {
 
     return (
         <>
+            <h4 className="mb-3">Live Analytics</h4>
+            <WidgetsDropdown />
             <CRow>
                 <CCol md="8">
                     <CCard>
@@ -57,8 +59,6 @@ const Dashboard = () => {
                     </CCard>
                 </CCol>
             </CRow>
-            <h4 className="mb-3">Live Analytics</h4>
-            <WidgetsDropdown />
         </>
     )
 }

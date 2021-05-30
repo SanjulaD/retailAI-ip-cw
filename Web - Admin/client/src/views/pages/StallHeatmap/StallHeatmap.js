@@ -58,8 +58,6 @@ const StallHeatmap = () => {
 
     setTimeout(() => {
         fetchData()
-
-
     }, 600000);
 
     return (

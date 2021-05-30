@@ -26,7 +26,7 @@ const OneYearData = () => {
 
   return (
     <>
-      <h4 className="mb-4 text-center">Overall Count Heatmap</h4>
+      <h4 className="mb-4 text-center">Heatmap</h4>
       {
         loading ? <Loader /> : (
           <Card className="heatmap-section border-0" style={{ backgroundColor: "transparent" }}>
